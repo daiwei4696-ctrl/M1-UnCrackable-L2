@@ -1,0 +1,18 @@
+# 依赖
+node_modules/
+
+# 反编译生成目录
+jadx-out/
+apktool-out/
+
+# Python 缓存
+__pycache__/
+
+# 运行/调试日志：保留主证据 frida-run.log，其余忽略
+*.log
+!frida-run.log
+
+# 冗余截图（一次运行里重复/多余抓图，正文仅引用 01 与 02）
+screenshots/02-app-with-hooks.png
+screenshots/04-l2-frida-attached.png
+screenshots/04-secret-typed.png

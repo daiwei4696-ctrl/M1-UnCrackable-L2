@@ -1,0 +1,110 @@
+[host] device: 25102RKBEC
+[host] target package: owasp.mstg.uncrackable2
+[host] spawned pid 3718
+[host] app resumed, waiting for hooks + verify...
+[*] Java VM attached, package=owasp.mstg.uncrackable2
+[hook] b.a (PATH scan) -> false
+[hook] b.b (build tags) -> false
+[hook] b.c (su files)  -> false
+[hook] a.a (FLAG_DEBUGGABLE) -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] CodeCheck.bar() input = "I want to believe"
+[hook] CodeCheck.bar() -> false
+[verify] "I want to believe"  =>  false
+[hook] CodeCheck.bar() input = "Thanks for all the fish"
+[hook] CodeCheck.bar() -> true
+[verify] "Thanks for all the fish"  =>  true
+[hook] CodeCheck.bar() input = "wrong guess"
+[hook] CodeCheck.bar() -> false
+[verify] "wrong guess"  =>  false
+[verify] done, bye
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[hook] Debug.isDebuggerConnected -> false
+[host] app killed, done

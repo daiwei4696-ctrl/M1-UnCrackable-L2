@@ -1,0 +1,147 @@
+== apktool-out\lib\x86_64\libfoo.so ==
+== .text @ 0x840, 2432 bytes ==  .plt @ 0x780 ==
+
+-------- Java_sg_vantagepoint_uncrackable2_MainActivity_init  @ 0x1100 (size=15) --------
+0x001100:  push     rax
+0x001101:  call     0x8d0
+0x001106:  mov      byte ptr [rip + 0x2eff], 1
+0x00110d:  pop      rax
+0x00110e:  ret      
+
+-------- Java_sg_vantagepoint_uncrackable2_CodeCheck_bar  @ 0x1110 (size=175) --------
+0x001110:  push     r15
+0x001112:  push     r14
+0x001114:  push     rbx
+0x001115:  sub      rsp, 0x20
+0x001119:  mov      r14, rdx
+0x00111c:  mov      rbx, rdi
+0x00111f:  mov      rax, qword ptr fs:[0x28]
+0x001128:  mov      qword ptr [rsp + 0x18], rax
+0x00112d:  cmp      byte ptr [rip + 0x2ed8], 1
+0x001134:  jne      0x119a
+0x001136:  mov      qword ptr [rsp + 0x10], 0
+0x00113f:  movaps   xmm0, xmmword ptr [rip + 0x7a]
+0x001146:  movaps   xmmword ptr [rsp], xmm0
+0x00114a:  mov      dword ptr [rsp + 0x10], 0x66206568
+0x001152:  mov      word ptr [rsp + 0x14], 0x7369
+0x001159:  mov      byte ptr [rsp + 0x16], 0x68
+0x00115e:  mov      rax, qword ptr [rbx]
+0x001161:  xor      edx, edx
+0x001163:  mov      rdi, rbx
+0x001166:  mov      rsi, r14
+0x001169:  call     qword ptr [rax + 0x5c0]
+0x00116f:  mov      r15, rax
+0x001172:  mov      rax, qword ptr [rbx]
+0x001175:  mov      rdi, rbx
+0x001178:  mov      rsi, r14
+0x00117b:  call     qword ptr [rax + 0x558]
+0x001181:  cmp      eax, 0x17
+0x001184:  jne      0x119a
+0x001186:  mov      rsi, rsp
+0x001189:  mov      edx, 0x17
+0x00118e:  mov      rdi, r15
+0x001191:  call     0x830 <strncmp>
+0x001196:  test     eax, eax
+0x001198:  je       0x11b6
+0x00119a:  xor      eax, eax
+0x00119c:  mov      rcx, qword ptr fs:[0x28]
+0x0011a5:  cmp      rcx, qword ptr [rsp + 0x18]
+0x0011aa:  jne      0x11ba
+0x0011ac:  add      rsp, 0x20
+0x0011b0:  pop      rbx
+0x0011b1:  pop      r14
+0x0011b3:  pop      r15
+0x0011b5:  ret      
+0x0011b6:  mov      al, 1
+0x0011b8:  jmp      0x119c
+0x0011ba:  call     0x820 <__stack_chk_fail>
+
+-------- sub_0x8d0��ptrace �����ԣ�MainActivity.init ���ã�--------
+0x0008d0:  push     r14
+0x0008d2:  push     rbx
+0x0008d3:  sub      rsp, 0x18
+0x0008d7:  mov      rax, qword ptr fs:[0x28]
+0x0008e0:  mov      qword ptr [rsp + 0x10], rax
+0x0008e5:  call     0x7e0 <fork>
+0x0008ea:  mov      dword ptr [rip + 0x3718], eax
+0x0008f0:  test     eax, eax
+0x0008f2:  je       0x90e
+0x0008f4:  lea      rdx, [rip - 0x5b]
+0x0008fb:  lea      rdi, [rsp + 8]
+0x000900:  xor      esi, esi
+0x000902:  xor      ecx, ecx
+0x000904:  call     0x7f0 <pthread_create>
+0x000909:  jmp      0x99e
+0x00090e:  call     0x800 <getppid>
+0x000913:  mov      ebx, eax
+0x000915:  mov      edi, 0x10
+0x00091a:  xor      edx, edx
+0x00091c:  xor      ecx, ecx
+0x00091e:  xor      eax, eax
+0x000920:  mov      esi, ebx
+0x000922:  call     0x810 <ptrace>
+0x000927:  test     rax, rax
+0x00092a:  jne      0x99e
+0x00092c:  lea      r14, [rsp + 8]
+0x000931:  xor      edx, edx
+0x000933:  mov      edi, ebx
+0x000935:  mov      rsi, r14
+0x000938:  call     0x7b0 <waitpid>
+0x00093d:  mov      edi, 7
+0x000942:  xor      edx, edx
+0x000944:  xor      ecx, ecx
+0x000946:  xor      eax, eax
+0x000948:  mov      esi, ebx
+0x00094a:  call     0x810 <ptrace>
+0x00094f:  xor      edx, edx
+0x000951:  mov      edi, ebx
+0x000953:  mov      rsi, r14
+0x000956:  call     0x7b0 <waitpid>
+0x00095b:  test     eax, eax
+0x00095d:  je       0x99e
+0x00095f:  lea      r14, [rsp + 8]
+0x000964:  nop      word ptr cs:[rax + rax]
+0x00096e:  nop      
+0x000970:  mov      eax, dword ptr [rsp + 8]
+0x000974:  and      eax, 0x7f
+0x000977:  cmp      eax, 0x7f
+0x00097a:  jne      0x9b6
+0x00097c:  mov      edi, 7
+0x000981:  xor      edx, edx
+0x000983:  xor      ecx, ecx
+0x000985:  xor      eax, eax
+0x000987:  mov      esi, ebx
+0x000989:  call     0x810 <ptrace>
+0x00098e:  xor      edx, edx
+0x000990:  mov      edi, ebx
+0x000992:  mov      rsi, r14
+0x000995:  call     0x7b0 <waitpid>
+0x00099a:  test     eax, eax
+0x00099c:  jne      0x970
+0x00099e:  mov      rax, qword ptr fs:[0x28]
+0x0009a7:  cmp      rax, qword ptr [rsp + 0x10]
+0x0009ac:  jne      0x9bd
+0x0009ae:  add      rsp, 0x18
+0x0009b2:  pop      rbx
+0x0009b3:  pop      r14
+0x0009b5:  ret      
+0x0009b6:  xor      edi, edi
+0x0009b8:  call     0x7d0 <_exit>
+0x0009bd:  call     0x820 <__stack_chk_fail>
+0x0009c2:  nop      word ptr cs:[rax + rax]
+
+-------- .rodata @ 0x11c0 --------
+hex  : 54 68 61 6e 6b 73 20 66 6f 72 20 61 6c 6c 20 74
+ascii: Thanks for all t
+ƴ�� : Thanks for all the fish  len = 23
+
+-------- ��������ص��õ� --------
+0x8ae  call  <waitpid>
+0x904  call  <pthread_create>
+0x90e  call  <getppid>
+0x922  call  <ptrace>
+0x938  call  <waitpid>
+0x94a  call  <ptrace>
+0x956  call  <waitpid>
+0x989  call  <ptrace>
+0x995  call  <waitpid>

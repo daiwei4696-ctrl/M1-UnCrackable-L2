@@ -1,0 +1,16 @@
+{
+  "name": "m1-uncrackable-l2",
+  "version": "1.0.0",
+  "main": "verify-l2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "OWASP UnCrackable Level 2 - native (libfoo.so) reverse + Frida",
+  "devDependencies": {
+    "frida-compile": "^19.0.5",
+    "frida-java-bridge": "^7.0.13"
+  }
+}
