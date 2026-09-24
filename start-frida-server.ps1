@@ -1,4 +1,4 @@
-# 启动雷电模拟器里的 frida-server（root）。用法： powershell -File start-frida-server.ps1
+﻿# 启动雷电模拟器里的 frida-server（root）。用法： powershell -File start-frida-server.ps1
 $adb = "D:\leidian\LDPlayer9\adb.exe"
 $dev = "emulator-5554"
 Write-Host "[*] devices:"; & $adb devices
