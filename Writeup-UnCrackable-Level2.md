@@ -207,7 +207,12 @@ adb shell input keyevent 4                                    # 关弹窗
 ```
 界面依次截图（`screenshots/`）：
 - `01-secret-typed.png`：已输入 `Thanks for all the fish`，尚未点 VERIFY。
+
+  ![](screenshots/01-secret-typed.png)
+
 - `02-success-dialog.png`：**Success! / This is the correct secret.**
+
+  ![](screenshots/02-success-dialog.png)
 
 ---
 
@@ -222,7 +227,7 @@ adb shell input keyevent 4                                    # 关弹窗
 - `run_verify.py`：Frida 驱动（spawn → 注入 → 程序化验证）
 - `native-bar-disasm.py` / `native-bar-disasm.txt`：capstone 反汇编脚本与输出
 - `frida-run.log` / `frida-ui-run.log`：两次动态运行日志
-- `screenshots/01-secret-typed.png`、`screenshots/02-success-dialog.png`
+- `screenshots/01-secret-typed.png`、`screenshots/02-success-dialog.png`（hook 运行态另见 `02-app-with-hooks.png`）
 - `jadx-out/`、`apktool-out/`：反编译 / 解包输出（.gitignore 忽略）
 
 ## 6. 一把梭复现清单
