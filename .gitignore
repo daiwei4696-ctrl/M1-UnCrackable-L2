@@ -12,7 +12,6 @@ __pycache__/
 *.log
 !frida-run.log
 
-# 冗余截图（一次运行里重复/多余抓图，正文仅引用 01 与 02）
-screenshots/02-app-with-hooks.png
-screenshots/04-l2-frida-attached.png
-screenshots/04-secret-typed.png
+# 冗余截图：与 01/02 内容重复的重复抓图，不入库
+screenshots/04-*.png
+
